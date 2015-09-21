@@ -50,6 +50,7 @@
 				</tr>
 				<?php } ?>
 			</table>
+			<a href="../write.php">글쓰기</a>
 		</div>
 	</div>
 

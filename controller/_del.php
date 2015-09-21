@@ -1,14 +1,12 @@
 <?php 
+include "../core/database.php";
 
 $no = $_GET['no'];
 
-echo "
-<script>
-	var isit = confirm('is it true?');
-	if ( isit == true ) {
-		<?php include('../controller/_delOK.php'); ?>
-	} else {
-		location.href='../controller/_list.php';	
-	}
-</script>
-";
+$sql = "DELETE FROM ss WHERE no = $no";
+
+$query = mysql_query($sql, $conn) or die(mysql_error());
+
+
+mysql_close($conn);
+echo '<script>location.href=("../controller/_list.php");</script>';
