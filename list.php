@@ -22,7 +22,7 @@
 		th, td {border:1px solid #d4d4d4; padding:20px;}
 		th {border-top:none; background:#f4f4f4;}
 		tr:last-child td {border-bottom:none;}
-		
+		.btn_list {display:block; width:100px; height:60px; color:#fff; background:#333; line-height:60px; margin:50px auto; text-decoration:none;}
 	</style>
 </head>
 
@@ -50,8 +50,8 @@
 				</tr>
 				<?php } ?>
 			</table>
-			<a href="../write.php">글쓰기</a>
 		</div>
+		<a class="btn_list" href="../write.php">글쓰기</a>
 	</div>
 
 </body>

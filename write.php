@@ -26,6 +26,7 @@
 			<label for="subject">제목 : </label><input type="text" name="subject" id="subject" class="" placeholder="제목"><br>
 			<label for="body">내용 : </label><textarea type="text" name="body" id="body" class="" placeholder="내용"></textarea>
 			<input type="submit" value="글쓰기">
+			<a class="bbs_btn" href="_list.php">목록보기</a>
 		</div>
 	</form>
 </body>

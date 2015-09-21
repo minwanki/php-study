@@ -21,11 +21,12 @@
 
 	<form action="_modifyOK.php?no=<?= $no ?>" method="post">
 		<div class="box_write">
-			<h1>게시판 연습하기</h1>
+			<h1>게시판 수정연습하기</h1>
 			<label for="name">이름 : </label><input type="text" name="name" id="name" value="<?= $name ?>" class="" placeholder="이름"><br>
 			<label for="subject">제목 : </label><input type="text" name="subject" id="subject"  value="<?= $subject ?>" class="" placeholder="제목"><br>
 			<label for="body">내용 : </label><textarea type="text" name="body" id="body" class="" placeholder="내용"><?= $body ?></textarea>
-			<input type="submit" value="글쓰기">
+			<input type="submit" value="수정하기">
+			<a class="bbs_btn" href="_list.php">목록보기</a>
 		</div>
 	</form>
 </body>

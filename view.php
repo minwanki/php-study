@@ -19,7 +19,7 @@
 		th, td {border:1px solid #d4d4d4; padding:20px;}
 		th {border-top:none; background:#f4f4f4;}
 		tr:last-child td {border-bottom:none;}
-		
+		.bbs_btn {display:inline-block; width:100px; height:60px; line-height:60px; color:#fff; background-color:#333; text-decoration:none; margin:50px 5px;}
 	</style>
 </head>
 
@@ -53,9 +53,9 @@
 	<?php
 		endif;
 	?>
-	<a href="_modify.php?no=<?=$no ?>">수정하기</a>
-	<a href="_list.php">돌아가기</a>
-	<a href="_del.php?no=<?=$row['no'] ?>">삭제하기</a>
+	<a class="bbs_btn" href="_modify.php?no=<?=$no ?>">수정하기</a>
+	<a class="bbs_btn" href="_list.php">목록보기</a>
+	<a class="bbs_btn" href="_del.php?no=<?=$row['no'] ?>">삭제하기</a>
 	</div>
 	</div>
 
